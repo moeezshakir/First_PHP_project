@@ -1,0 +1,331 @@
+ /* cards css for 'see more details button'*/
+ .featureDetails,
+ .PopularProduct {
+     width: 80%;
+     margin: 12px auto;
+     padding: 0 15px;
+     /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); */
+     /* border: 1px solid #ccc; */
+ }
+
+ .featureDetails .cards,
+ .PopularProduct .cards {
+     width: 100%;
+     align-items: unset;
+     /* box-shadow: none; */
+ }
+
+ .featureDetails .cards .card {
+     width: 300px;
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-bottom: 5px;
+     /* gap: 8px; */
+     /* transition: all 0.3s; */
+     overflow: hidden;
+     align-self: baseline;
+ }
+
+ .featureDetails .cards .card:hover {
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+ }
+
+ .featureDetails .cards .expanded,
+ .featureDetails .cards .expanded2 {
+     height: auto;
+     padding: 0;
+ }
+
+ .featureDetails .cards .card .image {
+     padding: 5px;
+     width: 100%;
+     min-height: 190px;
+     max-height: 190px;
+     overflow: hidden;
+     border-bottom: 1px solid;
+ }
+
+ .featureDetails .cards .card .image img {
+     width: 100%;
+     /* height: 100%; */
+     min-height: 190px;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .featureDetails .cards .card .card-body {
+     padding: 10px;
+     flex: none;
+     font-size: 14px;
+ }
+
+ .featureDetails .cards .card .card-body .card-title {
+     margin: 0;
+ }
+
+ .featureDetails .cards .card p {
+     font-size: 15.5px;
+     text-align: center;
+ }
+
+ .featureDetails .cards .card .para {
+     padding: 10px;
+     height: auto;
+     display: none;
+ }
+
+ .featureDetails .cards .card .para2 {
+     padding: 10px;
+     height: auto;
+     border-top: 1px solid;
+     width: 100%;
+     display: none;
+     overflow-x: auto;
+ }
+
+ .featureDetails .cards .card .itemDetail {
+     font-size: 15px;
+     /* width: 100%; */
+ }
+
+ .featureDetails .cards .card .itemDetail .row {
+     display: flex;
+     width: 100%;
+     /* justify-content: space-evenly; */
+ }
+
+ .featureDetails .cards .card .itemDetail .row strong,
+ .featureDetails .cards .card .itemDetail .row span {
+     width: auto;
+ }
+
+ .featureDetails .cards .card button {
+     color: #ffffff;
+ }
+
+ .featureDetails .cards .card button:hover {
+     color: black;
+ }
+
+ .salebox {
+     margin: 10px auto;
+     padding: 15px 25px;
+     justify-content: space-evenly;
+     width: 85%;
+     gap: 20px;
+     flex-wrap: wrap;
+ }
+
+ .salebox .row {
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 260px;
+     justify-content: space-evenly;
+     flex-direction: column;
+     padding: 20px;
+     border-radius: 12px;
+     border: 2px solid #4e4e4e;
+     transition: all 0.3s;
+ }
+
+ .salebox .r1 {
+     background-image: url(./img12.png);
+ }
+
+ .salebox .r2 {
+     background-image: url(./img11.png);
+ }
+
+ .salebox .row:hover {
+     background-position: center;
+     box-shadow: 3px 3px 6px rgba(67, 67, 67, 0.8);
+ }
+
+ .salebox .row:hover .blr {
+     background: rgba(255, 255, 255, 0.3);
+     backdrop-filter: blur(10px);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+ }
+
+ .salebox button {
+     width: auto;
+     align-self: flex-start;
+ }
+
+ .col-md-12 {
+     background: linear-gradient(180deg, #2d3038, #161a22);
+     text-align: center;
+     padding: 20px;
+ }
+
+ .col-md-12 p {
+     color: white;
+ }
+
+ /* Media Query for responsive menu */
+ @media screen and (max-width: 1050px) {
+
+     .salebox {
+         width: 100%;
+     }
+
+     .salebox .row {
+         height: 240px;
+     }
+ }
+
+ @media screen and (max-width: 920px) {
+
+     .salebox {
+         width: 75%;
+     }
+
+     .salebox .row {
+         width: 80%;
+     }
+
+     .featureDetails,
+     .PopularProduct {
+         width: 90%;
+     }
+ }
+
+ @media screen and (max-width: 768px) {
+
+     .salebox {
+         width: 85%;
+     }
+
+     .salebox .row {
+         height: 210px;
+     }
+
+     .featureDetails,
+     .PopularProduct {
+         width: 95%;
+     }
+
+     .featureDetails .cards .card p {
+         font-size: 15px;
+     }
+
+     .featureDetails h2,
+     .PopularProduct h2 {
+         font-size: 1.6rem;
+         padding: 0 10px;
+     }
+ }
+
+ @media screen and (max-width: 540px) {
+
+     .salebox {
+         width: 100%;
+         padding: 15px;
+     }
+
+     .salebox .row {
+         width: 100%;
+         height: 185px;
+     }
+
+     .featureDetails,
+     .PopularProduct {
+         width: 100%;
+         margin: 10px auto;
+     }
+
+     .featureDetails .cards,
+     .PopularProduct .cards {
+         padding: 0;
+     }
+
+     /* .featureDetails .cards .expanded {
+         height: 420px;
+     } */
+
+     .featureDetails h2,
+     .PopularProduct h2 {
+         font-size: 1.45rem;
+     }
+
+     .featureDetails .cards .card .para {
+         /* height: auto; */
+         overflow-y: scroll;
+         padding-top: 0;
+     }
+
+     .featureDetails .cards .card p {
+         font-size: 14.5px;
+     }
+
+     h2,
+     h3 {
+         font-size: 1.4rem;
+     }
+
+     p {
+         font-size: 16px;
+     }
+ }
+
+ @media screen and (max-width: 340px) {
+
+     .salebox {
+         padding: 5px;
+     }
+
+     .featureDetails,
+     .PopularProduct {
+         padding: 0;
+     }
+
+     .featureDetails .cards .card .image {
+         padding: 0;
+     }
+
+     .featureDetails .cards .card {
+         height: 270px;
+     }
+
+     .featureDetails .cards .expanded {
+         height: auto;
+     }
+
+     .featureDetails .cards .expanded2 {
+         height: auto;
+     }
+
+     .featureDetails .cards .card p {
+         font-size: 14px;
+     }
+
+     .featureDetails h2,
+     .PopularProduct h2 {
+         font-size: 1.4rem;
+     }
+
+     .featureDetails .cards .card .card-body,
+     .PopularProduct .cards .card .card-body {
+         padding: 6px 6px 0 6px;
+     }
+
+     .featureDetails .cards .card .card-body .card-title,
+     .PopularProduct .cards .card .card-body .card-title {
+         font-size: 1rem;
+     }
+
+     .featureDetails .cards .card .buttons {
+         padding: 0 8px;
+     }
+
+     .featureDetails .cards .card button {
+         padding: 4px 6px;
+         font-size: 15px;
+     }
+
+     .featureDetails .cards .card .itemDetail {
+         font-size: 14.5px;
+     }
+ }

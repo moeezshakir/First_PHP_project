@@ -1,0 +1,49 @@
+/* description paragraphs css */
+.main .descriptionpara {
+    width: 80%;
+    padding: 20px;
+    margin: 10px auto;
+    margin-bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid;
+    border: 2px solid #cfcfcf;
+}
+
+/* cards css */
+.main .cards {
+    margin-top: 0;
+    border: 2px solid #cfcfcf;
+    border-top: none;
+}
+
+
+.main .cards h3 {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Media Query for responsive menu */
+@media screen and (max-width: 680px) {
+    .main .descriptionpara .p3 {
+        display: none;
+    }
+
+    .main .descriptionpara {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        padding: 0;
+    }
+
+    .main .descriptionpara .p2 {
+        display: none;
+    }
+
+    .main .descriptionpara p {
+        font-size: 15px;
+    }
+}

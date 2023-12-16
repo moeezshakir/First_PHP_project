@@ -1,0 +1,50 @@
+.card {
+    overflow: hidden;
+}
+
+.card .back .btn {
+    margin: 4px 10px;
+}
+
+
+.cards .card .detailbox {
+    position: absolute;
+    background-color: teal;
+    padding: 5px 10px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform: translateX(310px);
+    transition: 0.3s all;
+}
+
+.btn-close {
+    opacity: 1;
+    float: right;
+    position: sticky;
+    top: 0;
+    background-color: teal;
+}
+
+.cards .card .detailbox h4 {
+    border-top: 1px solid;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+}
+
+.cards .card .detailbox .row {
+    display: flex;
+    /* width: 100%; */
+    /* flex-wrap: nowrap; */
+}
+
+.cards .card .detailbox .row strong,
+.cards .card .detailbox .row span {
+    width: auto;
+}
+
+.cards .card .detailbox .row span {
+    font-size: 15px;
+}

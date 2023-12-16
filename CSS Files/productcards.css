@@ -1,0 +1,141 @@
+ /* cards css */
+ .cards {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 25px;
+     margin: 10px auto;
+     padding: 15px;
+     width: 80%;
+     /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); */
+ }
+
+ .card {
+     width: 300px;
+     height: 300px;
+     align-content: space-between;
+     border: 2px solid #c3c3c3;
+     /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); */
+     border-radius: 0px;
+ }
+
+ /* cards holder */
+ .content {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+     transition: transform 1s;
+     transform-style: preserve-3d;
+     border-radius: 0px;
+ }
+
+ .card:hover .content {
+     transform: rotateY(180deg);
+     transition: transform 0.5s;
+ }
+
+ /* card front and back css */
+ .front,
+ .back {
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background: white;
+     color: #03446A;
+     text-align: center;
+     border-radius: 0px;
+     backface-visibility: hidden;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .back {
+     background: #03446A;
+     color: white;
+     transform: rotateY(180deg);
+     font-size: 16px;
+     padding: 10px;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .front .image {
+     width: 100%;
+     height: 210px;
+     overflow: hidden;
+     border-radius: 0px;
+     /* border-bottom: 1px solid; */
+ }
+
+ .front .image img {
+     width: 100%;
+     height: 100%;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .front .card-body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* Media Query for responsive menu */
+ @media screen and (max-width: 880px) {
+     .cards {
+         width: 100%;
+         margin-top: 10px;
+     }
+
+     .card {
+         width: 280px;
+         height: 280px;
+     }
+
+     .back {
+         font-size: 17px;
+     }
+
+     .back p {
+         font-size: 0.92rem;
+     }
+ }
+
+ @media screen and (max-width: 480px) {
+     .main {
+         margin: 0px;
+     }
+
+     .cards {
+         padding: 10px;
+         gap: 15px;
+     }
+
+     .card {
+         height: 250px;
+     }
+
+     .front .image {
+         height: 180px;
+     }
+
+     .back {
+         font-size: 16px;
+     }
+
+     .back a,
+     .back button {
+         font-size: 0.92rem;
+     }
+ }
+
+ @media screen and (max-width: 300px) {
+     .back {
+         font-size: 14px;
+         overflow: hidden;
+         overflow-y: auto;
+         justify-content: unset;
+     }
+ }

@@ -1,0 +1,388 @@
+/* to use in multiple elements  */
+.df {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bb {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+/* main content css */
+.main {
+    padding: 20px;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    gap: 20px;
+}
+
+/* contact box css */
+.box {
+    width: 80%;
+    height: 600px;
+    background: #ffffff;
+    margin: auto;
+    line-height: 1.3;
+    border: 2px solid;
+    border-radius: 4px;
+    box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* contact box left and right side css */
+.box .left-side,
+.box .right-side {
+    width: 50%;
+    height: 100%;
+    justify-content: unset;
+    align-items: unset;
+    flex-direction: column;
+    gap: 12px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.box .heading {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.box .img {
+    width: 100%;
+}
+
+.box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.box .right-side-fs {
+    display: none;
+    gap: 10px;
+}
+
+.box h3 {
+    font-family: "Roboto", sans-serif;
+    color: #ff7700;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+/* .box .right-side h3 {
+} */
+
+.box .row {
+    width: 100%;
+    margin: unset;
+    margin-bottom: .625rem;
+}
+
+/* contact box form css */
+.box #contactForm {
+    justify-content: unset;
+    align-items: unset;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    /* border: 2px solid; */
+    border-radius: 5px;
+}
+
+.box .form-control {
+    border: none;
+    background: #f3f3f3;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background: rgba(255, 255, 255, 0.65);
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.box textarea {
+    resize: none;
+    overflow-y: visible;
+    min-height: 160px;
+}
+
+.box .form-control:active,
+.box .form-control:focus {
+    /* border: 2px solid #000000;
+    background: #f3f3f3;
+    box-shadow: none; */
+    outline: none;
+    background-color: #f2f6f8;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+}
+
+/* .box .btn, */
+.box .form-control,
+.box .custom-select {
+    height: 50px;
+}
+
+.box .btn {
+    /* background: #bebebe; */
+    /* color: #dfdfdf; */
+    /* border: 1px solid; */
+    padding: 8px 30px;
+    border-radius: 4px;
+    width: auto;
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.box .btn:hover {
+    /* background: #000000; */
+    background-color: #3aa8df;
+    color: #ffffff;
+    /* box-shadow: 0px 7px 5px #0f7fb765; */
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+    outline: none;
+}
+
+.box .btn:active,
+.box .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-check {
+    width: auto;
+    font-size: 17px;
+}
+
+.form-select {
+    border: none;
+    font-size: 19px;
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.form-select:focus {
+    background-color: #ecf4f8;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+}
+
+.box h5 {
+    width: auto;
+}
+
+/* Info css */
+.Info {
+    flex-direction: column;
+    margin: 1rem;
+    width: 80%;
+    gap: 1rem;
+    border: 2px solid;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.Info .Infofl {
+    border: 1px solid;
+    width: 100%;
+    padding: 20px;
+}
+
+.Info .location {
+    width: 100%;
+    border: 1px solid;
+    overflow: hidden;
+}
+
+.Info .location iframe {
+    width: 100%;
+    height: 500px;
+}
+
+/* Media Query for responsive menu */
+@media only screen and (max-width: 1000px) {
+    .box {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .main {
+        height: unset;
+    }
+
+    .box {
+        width: 75%;
+        height: auto;
+        z-index: 55;
+    }
+
+    .box .left-side {
+        display: none;
+    }
+
+    .box .right-side {
+        width: 100%;
+    }
+
+    .box .right-side {
+        background: url(./Contact-us-img-removebg-preview.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .box .right-side-fs {
+        display: block;
+    }
+
+    .Info {
+        margin: 0;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .box h3 {
+        font-size: 1.8rem;
+    }
+
+    .box .btn {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .box h3 {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    .box .right-side {
+        padding: 10px;
+    }
+
+    .box #contactForm {
+        padding: 0;
+        border: none;
+    }
+
+    .box h5 {
+        font-size: 17px;
+    }
+
+    .Info {
+        gap: 10px;
+    }
+
+    .Info h1,
+    .Info h2 {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .Info .Infofl {
+        padding: 8px;
+    }
+
+    .Info .location iframe {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 444px) {
+    .main {
+        padding: 20px 0;
+        height: unset;
+    }
+
+    .box {
+        box-shadow: -12px 14px 0px 0 rgba(0, 0, 0, 0.08);
+        border-radius: 0;
+    }
+
+    .box h3 {
+        word-spacing: 5px;
+        text-align: center;
+    }
+
+    .box .right-side {
+        background-size: cover;
+    }
+
+    .box .form-control {
+        padding: 0.275rem 0.55rem;
+        line-height: 1.4;
+        font-size: 0.85rem;
+    }
+
+    .box .form-control,
+    .box .custom-select {
+        height: 40px;
+    }
+
+    .form-check,
+    .form-select {
+        font-size: 14px;
+    }
+
+    .box .btn {
+        font-size: 14px;
+        padding: 6px 23px;
+    }
+
+    .w-50 {
+        width: 100%;
+    }
+
+    .justify-content-between {
+        flex-direction: column;
+    }
+
+    .Info h1,
+    .Info h2 {
+        font-size: 1.2rem;
+    }
+
+    .Info .Infofl p {
+        font-size: 14px;
+    }
+
+    .Info .location iframe {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .box .right-side {
+        background-image: none;
+    }
+
+    .box h3 {
+        word-break: break-all;
+    }
+
+    .Info .location iframe {
+        height: 230px;
+    }
+
+    .Info h1,
+    .Info h2 {
+        font-size: 1.1rem;
+    }
+}

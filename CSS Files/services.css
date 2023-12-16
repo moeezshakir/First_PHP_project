@@ -1,0 +1,55 @@
+/* Style the main content area */
+.main {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #cfcfcf;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style individual service divs */
+.service {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.service h2 {
+    color: #007bff;
+}
+
+/* Media Query for responsive menu */
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+
+    .main {
+        padding: 10px;
+    }
+
+    .service {
+        padding: 10px;
+    }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 480px) {
+
+    .main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .service {
+        margin-bottom: 12px;
+    }
+
+    .service h2 {
+        font-size: 1.3rem;
+    }
+
+    .service p {
+        font-size: 0.92rem;
+    }
+}

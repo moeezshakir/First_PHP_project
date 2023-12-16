@@ -1,0 +1,66 @@
+ .main {
+     margin: 2rem 1rem;
+     padding: 20px;
+ }
+
+ table {
+     border-collapse: collapse;
+     width: 100%;
+     margin-top: 20px;
+     overflow-x: auto;
+ }
+
+ table th,
+ td {
+     border: 1px solid #ddd;
+     padding: 8px;
+     text-align: left;
+ }
+
+ .detaild {
+     word-break: break-all;
+ }
+
+ table th {
+     /* background-color: #4CAF50; */
+     background: #36304a;
+     color: white;
+     padding: 12px 10px;
+ }
+
+ table tr:nth-child(odd) {
+     /* background-color: #f2f2f2; */
+     background-color: #ccc;
+ }
+
+ table a {
+     text-decoration: none;
+     color: black;
+     padding: 6px 10px;
+     border: 1px solid;
+     margin: 10px;
+ }
+
+ table a:hover {
+     /* background-color: #4CAF50; */
+     background: #36304a;
+     color: white;
+ }
+
+ /* Example media query for smaller screens */
+ @media screen and (max-width: 1180px) {
+     table {
+         display: block;
+     }
+
+     td {
+         min-width: 130px;
+     }
+ }
+
+ @media screen and (max-width: 768px) {
+     .main {
+         margin: 1rem 0;
+         padding: 0;
+     }
+ }

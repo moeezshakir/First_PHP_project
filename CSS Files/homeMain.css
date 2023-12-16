@@ -1,0 +1,53 @@
+.main {
+    margin-bottom: 40px;
+}
+
+.carousel-caption:hover {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    transition: all 0.1s;
+}
+
+/* image slide css */
+.w-set {
+    width: 100%;
+    padding: 0;
+    /* border-inline: 50px solid #305A72; */
+    border-inline: 50px solid #1b1e25;
+}
+
+/* Media Query for responsive menu */
+@media only screen and (max-width: 1000px) {
+    .w-set {
+        border: 0;
+    }
+
+    .hi-set {
+        height: 480px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hi-set {
+        height: 400px;
+    }
+
+    .w-set {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+
+    .hi-set {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+
+    .hi-set {
+        height: 200px;
+    }
+}
