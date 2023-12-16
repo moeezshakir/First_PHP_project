@@ -1,5 +1,5 @@
 # First_PHP_project (CycleMart)
-now create three database using MySQL of xampp
+Now create three database using MySQL of xampp.
 Database no.1 with name of 'contactForm' and create table 'contact' with columns (name,	email, gender,	city,	subject, message).
 
 Database no.2 with name of 'Logind' and create table 'logint' with columns (username, email, password).
